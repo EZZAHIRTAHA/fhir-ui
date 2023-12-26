@@ -46,7 +46,7 @@
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
-    "start": "rollup -c -w",
+    "start": "rollup -c -w --port=3000",
     "docz:dev": "docz dev --config ./doczrc.js",
     "docz:build": "docz build --config ./doczrc.js",
     "deploy": "yarn docz:build && gh-pages -d .docz/dist"
@@ -89,6 +89,5 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-url": "^3.0.1"
-  },
-  "dependencies": {}
+  }
 }
